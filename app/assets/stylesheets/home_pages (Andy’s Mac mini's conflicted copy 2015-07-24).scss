@@ -1,0 +1,82 @@
+.content_container {
+  width: 100%;
+}
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+// About Section
+.section_title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.about_the_company {
+
+}
+.about_text {
+  background-color: #ed7777;
+  padding: 28px 1.5rem;
+  p {
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+.tab, .tab2, .tab3 {
+  height: 46px;
+}
+.tab {
+  background-color: #94c0cc;
+}
+.tab2 {
+  background-color: #bcdf8a;
+}
+.tab3 {
+  background-color: #f5f9ad;
+}
+// Services Overview
+.services_summary {
+  padding: 30px 1.5rem;
+}
+// Contact Section
+.contact_pane {
+  background-color: #f6f4f1;
+  padding: 30px 30px;
+  div {
+    float: left;
+    padding: 0 5%;
+    margin: 0 -1px 0 0;
+  }
+  input {
+    width: 100%;
+    border: 0;
+    padding: 20px 0;
+    background-color: #f6f4f1;
+    &:focus {
+      outline-offset: -50px;
+    }
+  }
+  textarea {
+    width: 100%;
+    border: 0;
+    background-color: #f6f4f1;
+    border-top: 1px solid #94c0cc;
+    padding: 20px 0 0;
+    margin: 10px 0 0;
+    &:focus {
+      outline-offset: -200px;
+    }
+  }
+}
+.form_name {
+  border-right: 1px solid #94c0cc;
+}
+.submit_button {
+  text-align: center;
+  button {
+    border: 0;
+    background-color: #94c0cc;
+    padding: 10px 20px;
+    color: #f6f4f1;
+  }
+}

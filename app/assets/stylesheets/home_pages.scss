@@ -1,0 +1,215 @@
+.outer_content_container {
+  width: 100%;
+}
+.content_container {
+  width: 80%;
+  padding: 1px 0;
+  background-color: #29abe2;
+  margin: 0 auto;
+}
+.front_image {
+  background-image: url(background.jpg);
+  margin: 1px 0 0;
+  h1, h2 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    margin: -30px 0 40px;
+  }
+  img {
+    position: absolute;
+    top: 700px;
+    left: 47%;
+    width: 7%;
+  }
+}
+.contact_bar {
+  background-color: rgba(255, 255, 255, 0.65);
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
+}
+.contact_phone {
+  text-align: left;
+}
+.contact_email {
+  text-align: right;
+}
+.title_container {
+  background-color: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top:  265px;
+  left: 28%;
+  padding: 10px 80px;
+}
+// About Section
+.section_title {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.about_the_company {
+  margin: 40px 0;
+}
+.about_text {
+  background-color: #29abe2;
+  padding: 60px 1.5rem;
+  color: #fff;
+  p {
+    margin: 24px 0;
+    letter-spacing: 1px;
+    line-height: 26px; 
+  }
+}
+.tab, .tab2, .tab3 {
+  height: 75px;
+}
+.tab {
+  background-color: #94c0cc;
+  margin-top: 75px;
+}
+.tab2 {
+  background-color: #bcdf8a;
+}
+.tab3 {
+  background-color: #f5f9ad;
+}
+// Our work / Gallery
+.photo_slider {
+  border-top: 1px solid #fff;
+  color: #fff;
+}
+.wrap {
+
+}
+#gallery {
+  width: 660px; 
+  margin: 0 auto;
+}
+#gallery ul {
+  padding-left: 10px;
+}
+#gallery li {
+  display: inline; 
+  margin-right: 3px;
+}
+#gallery {
+  ul {
+    padding: 0;
+    margin: 0;
+    img {
+      width: 120px;    
+    }
+  }
+}
+#gallery #main-img {
+  padding: 0;
+}
+.image_scroll_bar {
+  width: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 0 0 10px;
+  img {
+    margin: 0 -12px 0 0;
+    padding: 0;
+  }
+}
+.main_text {
+  background-color: rgba(255, 255, 255, 0.65);
+  height: 590px;
+}
+// Services Overview
+.services_summary {
+  padding: 30px 1.5rem;
+  margin: 40px 0 ;
+  background-color: #29abe2;
+  color: #fff;
+  border-top: 1px solid #fff;
+  ul {
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-weight: 300;
+  }
+  p {
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-weight: 300;
+  }
+}
+// Contact Section
+.contact_pane {
+  background-color: #f6f4f1;
+  padding: 30px 30px;
+  margin: 40px 0;
+  div {
+    float: left;
+    padding: 0 5%;
+    margin: 0 -1px 0 0;
+  }
+  input {
+    width: 100%;
+    border: 0;
+    padding: 20px 0;
+    background-color: #f6f4f1;
+    &:focus {
+      outline-offset: -50px;
+    }
+  }
+  textarea {
+    width: 100%;
+    border: 0;
+    background-color: #f6f4f1;
+    border-top: 1px solid #94c0cc;
+    padding: 20px 0 0;
+    margin: 10px 0 0;
+    &:focus {
+      outline-offset: -200px;
+    }
+  }
+}
+.form_name {
+  border-right: 1px solid #94c0cc;
+}
+.submit_button {
+  text-align: center;
+  button {
+    border: 0;
+    background-color: #94c0cc;
+    padding: 10px 20px;
+    color: #f6f4f1;
+  }
+}
+/* back to top */
+.to_top {
+  padding: 40px 0;
+  div {
+    text-align: center;
+    img {
+      width: 7%;
+    }
+  }
+}
+
+/*Footer*/
+.footer {
+  padding: 20px 0 30px;
+  ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      text-align: center;
+      font-weight: 300;
+      font-size: 12px;
+      color: #94c0cc;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.front_image
+  .contact_bar.clearfix
+    .contact_phone.split_5.column Phone No.
+    .contact_email.split_5.column Email.
+  .title_container
+    %h1 Hand Over Cleaning
+    %h2 Specialising in end of tenacy residential cleaning
+  = link_to (image_tag('down_arrow.png')), root_path
+.outer_content_container
+  .content_container
+    .content
+      .about_the_company.clearfix
+        .split_8.column.about_text
+          .section_title
+            %h2 About us
+          %p We are your trusted and reliable Hand Over Cleaning Company for end of tenancy cleans.We do everything for you including carpets, floors, wall washing, wipe down of cupboards and skirting boards, remove spider webs, oven cleaning, sinks, kitchens, bathrooms, you name it, we clean it.
+        = link_to root_path do
+          .split_2.column.tab
+        = link_to root_path do
+          .split_2.column.tab2
+        = link_to root_path do
+          .split_2.column.tab3
+
+      .photo_slider.clearfix
+        .split_10.column
+          .section_title
+            %h2 Our work
+            .owl-carousel
+              %div= image_tag('slide1.png')
+              %div= image_tag('slide2.png')
+              %div= image_tag('slide3.png')
+              %div= image_tag('slide4.png')
+              %div= image_tag('slide5.png')
+
+      .services_summary.clearfix
+        .section_title
+          %h2 What we can do for you!
+          //J-Query - details of a service slide out from right and overlay when services is selected.
+        %services_list.clearfix
+          %ul.split_5.column
+            %li Cleaning Showers & Bathrooms 
+            %li Mopping Floors & Washing Walls 
+            %li Ovens & Hot Plates 
+            %li Kitchens & Cupboards
+            %li Skirting Boards
+          %ul.split_5.column
+            %li Carpet Cleaning and Steam Cleaning if required. 
+            %li Vacuuming 
+            %li Kitchens
+            %li Bathrooms 
+            %li Cabinets cleaned
+          %ul.split_5.column
+            %li Hallways & Stairway 
+            %li Laundry
+            %li Skirting Boards 
+            %li Walls 
+            %li Floors
+          %ul.split_5.column
+            %li Windows 
+            %li Spot Cleaning and stain removal 
+        %p Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back! 
+        %p If you are moving out of your house or apartment soon and want to be confident you will get your deposit back from your property agents, contact us for a no obligation free Hand Back Cleaning Company quote today.
+      .more_detail_about_services
+      .contact_pane.clearfix
+        %form
+          .split_4.form_name
+            %input{:name => "name", :type => "text", :placeholder => "Name..."}
+          .split_4
+            %input{:name => "email", :type => 'email', :placeholder => "Email..."}
+          .split_9
+            %textarea{:name => "message", :rows => "8", :placeholder => "Message..."}
+          .split_9.submit_button
+            %button{:type => "submit"} SEND
+      .to_top.clearfix
+        .split_10.column
+          =link_to (image_tag('to_top.png')), root_path 
