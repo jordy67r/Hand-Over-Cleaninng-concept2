@@ -15,6 +15,7 @@
 //= require_tree .
 //= require owl.carousel
 
+
 $(function(){
   $(window).load(function(){ // On load
     $('.front_image').css({'height':(($(window).height()))+'px'});
@@ -22,6 +23,38 @@ $(function(){
   $(window).resize(function(){ // On resize
     $('.front_image').css({'height':(($(window).height()))+'px'});
   });
+});
+
+$(document).ready(function() {
+  
+  $('.tab-content>div:not(":first-of-type")').hide();
+  $('<div class="line"></div>').appendTo('.tab-menu li');
+  $('<div class="line2"></div>').appendTo('.tab-menu li');
+  $('.tab-menu li:first-of-type').find(':first').width('100%')
+  
+  $('.tab-menu li').each(function(i) {
+    $(this).attr('data-tab', 'tab'+i);
+  });
+  
+  $('.tab-content>div').each(function(i) {
+    $(this).attr('data-tab', 'tab'+i);
+  });
+  
+  $('.tab-menu li').on('click', function() {
+    
+    var dataTab = $(this).data('tab');
+    var getWrapper = $(this).closest('.tab-wrapper');
+    var line = $(this).find('.line');
+    
+    getWrapper.find('.tab-menu li').removeClass('active');
+    $(this).addClass('active');
+    
+    getWrapper.find('.line').width(0);
+    line.animate({'width':'100%'}, 'fast');
+    getWrapper.find('.tab-content>div').hide();
+    getWrapper.find('.tab-content>div[data-tab='+dataTab+']').show();
+  });
+
 });
 
 /**
@@ -3094,7 +3127,16 @@ $(function(){
 
 })(window.Zepto || window.jQuery, window, document);
 
-
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+$(document).ready(function() {
+ 
+  $(".owl-carousel").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ 
 });

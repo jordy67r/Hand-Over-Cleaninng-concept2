@@ -10,16 +10,37 @@
   .content_container
     .content
       .about_the_company.clearfix
-        .split_8.column.about_text
-          .section_title
-            %h2 About us
-          %p We are your trusted and reliable Hand Over Cleaning Company for end of tenancy cleans.We do everything for you including carpets, floors, wall washing, wipe down of cupboards and skirting boards, remove spider webs, oven cleaning, sinks, kitchens, bathrooms, you name it, we clean it.
-        = link_to root_path do
-          .split_2.column.tab
-        = link_to root_path do
-          .split_2.column.tab2
-        = link_to root_path do
-          .split_2.column.tab3
+        -#  
+          .split_8.column.about_text
+            .section_title
+              %h2 About us
+            %p We are your trusted and reliable Hand Over Cleaning Company for end of tenancy cleans.We do everything for you including carpets, floors, wall washing, wipe down of cupboards and skirting boards, remove spider webs, oven cleaning, sinks, kitchens, bathrooms, you name it, we clean it.
+          = link_to root_path do
+            .split_2.column.tab
+              tab 1
+          = link_to root_path do
+            .split_2.column.tab2
+              tab 2
+          = link_to root_path do
+            .split_2.column.tab3
+              tab 3
+
+        .tab-wrapper.clearfix
+          
+          .tab-content.split_8.column
+            %div
+              %h2 About us
+              %p We are your trusted and reliable Hand Over Cleaning Company for end of tenancy cleans.We do everything for you including carpets, floors, wall washing, wipe down of cupboards and skirting boards, remove spider webs, oven cleaning, sinks, kitchens, bathrooms, you name it, we clean it.
+            %div 
+              %h2 Lorem ipsum 
+              %p dolor sit amet, consectetur adipisicing elit. Enim veritatis nostrum, blanditiis, quia maiores nisi. Expedita cupiditate similique magnam, adipisci nesciunt, laborum rem! Excepturi, ad.
+            %div 
+              %h2 Lorem ipsum dolor 
+              %p sit amet, consectetur adipisicing elit. Quis, ad esse. Hic at officiis fuga mollitia quod.
+          %ul.tab-menu.split_2.column
+            %li.active About Us
+            %li tab #2
+            %li tab #3
 
       .photo_slider.clearfix
         .split_10.column
@@ -31,6 +52,8 @@
               %div= image_tag('slide3.png')
               %div= image_tag('slide4.png')
               %div= image_tag('slide5.png')
+
+
 
       .services_summary.clearfix
         .section_title

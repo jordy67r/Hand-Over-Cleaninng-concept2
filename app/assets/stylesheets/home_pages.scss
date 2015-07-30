@@ -10,6 +10,7 @@
 .front_image {
   background-image: url(background.jpg);
   margin: 1px 0 0;
+  width: 100%;
   h1, h2 {
     text-align: center;
   }
@@ -44,8 +45,10 @@
   background-color: rgba(255, 255, 255, 0.65);
   position: absolute;
   top:  265px;
-  left: 28%;
+  margin: 0 auto;
   padding: 10px 80px;
+  margin: 0 0 0 50%;
+  left: -424px;
 }
 // About Section
 .section_title {
@@ -55,7 +58,7 @@
 .about_the_company {
   margin: 40px 0;
 }
-.about_text {
+/*.about_text {
   background-color: #29abe2;
   padding: 60px 1.5rem;
   color: #fff;
@@ -67,17 +70,101 @@
 }
 .tab, .tab2, .tab3 {
   height: 75px;
+  border: 2px solid #fff;
+  margin: 2px 0;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #fff;
+  &:hover {
+    color: #000;
+    border: 2px solid #000;
+  }
 }
 .tab {
   background-color: #94c0cc;
   margin-top: 75px;
 }
 .tab2 {
-  background-color: #bcdf8a;
+  background-color: #94c0cc;
 }
 .tab3 {
-  background-color: #f5f9ad;
+  background-color: #94c0cc;
+}*/
+
+//TAB STUFF
+
+.tab-wrapper {
+  margin: 60px auto;
 }
+.tab-menu {
+  float: left;
+  padding: 0 1.5rem 0 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.tab-menu li {
+  position:relative;
+  background-color: #fff;
+  color:#bcbcbc;
+  display: inline-block;
+  padding: 20px 30px;
+  opacity: 0.8;
+  cursor:pointer;
+  z-index:0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tab-menu li:hover {
+  color:#464646;
+}
+
+.tab-menu li.active {
+  color:#464646;
+  opacity: 1;
+}
+
+.tab-menu li.active:hover {
+  color:#464646;
+}
+
+.tab-content>div {
+  box-sizing:border-box;
+  width: 100%;
+  min-height:200px;
+  float: left;
+  color: #fff;
+  h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  p {
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+}
+
+.line {
+  position:absolute;
+  width: 0;
+  height: 7px;
+  background-color: #7CD7FD;
+  top: 0;
+  left: 0;
+}
+.line2 {
+  position:absolute;
+  width: 0;
+  height: 7px;
+  background-color: #7CD7FD;
+  bottom: 0;
+  left: 0;
+}
+
 // Our work / Gallery
 .photo_slider {
   border-top: 1px solid #fff;
