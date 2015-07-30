@@ -1,12 +1,12 @@
-.front_image
+.front_image#top
   .contact_bar.clearfix
     .contact_phone.split_5.column Phone No.
     .contact_email.split_5.column Email.
   .title_container
     %h1 Hand Over Cleaning
     %h2 Specialising in end of tenacy residential cleaning
-  = link_to (image_tag('down_arrow.png')), root_path
-.outer_content_container
+  = link_to (image_tag('down_arrow.png')), '#about'
+.outer_content_container#about
   .content_container
     .content
       .about_the_company.clearfix
@@ -96,4 +96,4 @@
             %button{:type => "submit"} SEND
       .to_top.clearfix
         .split_10.column
-          =link_to (image_tag('to_top.png')), root_path 
+          =link_to (image_tag('to_top.png')), '#top'
