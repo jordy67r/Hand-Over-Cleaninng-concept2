@@ -15,6 +15,7 @@
 //= require_tree .
 //= require owl.carousel
 
+// Window height for landingpage
 
 $(function(){
   $(window).load(function(){ // On load
@@ -24,6 +25,8 @@ $(function(){
     $('.front_image').css({'height':(($(window).height()))+'px'});
   });
 });
+
+//Tabs
 
 $(document).ready(function() {
   
@@ -57,6 +60,8 @@ $(document).ready(function() {
 
 });
 
+//smoth jump scroll
+
 $(document).ready(function(){
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
@@ -69,6 +74,64 @@ $(document).ready(function(){
       }, 900, 'swing');
   });
 });
+
+//services drop down
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+    $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+    });
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+    });
+    $("#flip3").click(function(){
+        $("#panel3").slideToggle("slow");
+    });
+    $("#flip4").click(function(){
+        $("#panel4").slideToggle("slow");
+    });
+    $("#flip5").click(function(){
+        $("#panel5").slideToggle("slow");
+    });
+    $("#flip6").click(function(){
+        $("#panel6").slideToggle("slow");
+    });
+    $("#flip7").click(function(){
+        $("#panel7").slideToggle("slow");
+    });
+    $("#flip8").click(function(){
+        $("#panel8").slideToggle("slow");
+    });
+    $("#flip9").click(function(){
+        $("#panel9").slideToggle("slow");
+    });
+    $("#flip10").click(function(){
+        $("#panel10").slideToggle("slow");
+    });
+    $("#flip11").click(function(){
+        $("#panel11").slideToggle("slow");
+    });
+    $("#flip12").click(function(){
+        $("#panel12").slideToggle("slow");
+    });
+    $("#flip13").click(function(){
+        $("#panel13").slideToggle("slow");
+    });
+    $("#flip14").click(function(){
+        $("#panel14").slideToggle("slow");
+    });
+    $("#flip15").click(function(){
+        $("#panel15").slideToggle("slow");
+    });
+    $("#flip16").click(function(){
+        $("#panel16").slideToggle("slow");
+    });
+});
+$(document).ready(function() {
+//owl plugin
 
 /**
  * Owl carousel
@@ -3139,14 +3202,16 @@ $(document).ready(function(){
   $.fn.owlCarousel.Constructor.Plugins.Hash = Hash;
 
 })(window.Zepto || window.jQuery, window, document);
-
+});
 $(document).ready(function() {
  
   $(".owl-carousel").owlCarousel({
  
       autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
+      
+      loop:true,
+      nav:true,
+      items : 1,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]
  

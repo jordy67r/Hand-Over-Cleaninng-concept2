@@ -54,47 +54,13 @@
 .section_title {
   font-size: 24px;
   letter-spacing: 2px;
+  p {
+    font-size: 12px;
+  }
 }
 .about_the_company {
   margin: 40px 0;
 }
-/*.about_text {
-  background-color: #29abe2;
-  padding: 60px 1.5rem;
-  color: #fff;
-  p {
-    margin: 24px 0;
-    letter-spacing: 1px;
-    line-height: 26px; 
-  }
-}
-.tab, .tab2, .tab3 {
-  height: 75px;
-  border: 2px solid #fff;
-  margin: 2px 0;
-  text-align: center;
-  padding: 18px 0;
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 300;
-  color: #fff;
-  &:hover {
-    color: #000;
-    border: 2px solid #000;
-  }
-}
-.tab {
-  background-color: #94c0cc;
-  margin-top: 75px;
-}
-.tab2 {
-  background-color: #94c0cc;
-}
-.tab3 {
-  background-color: #94c0cc;
-}*/
-
 //TAB STUFF
 
 .tab-wrapper {
@@ -173,44 +139,16 @@
 .wrap {
 
 }
-#gallery {
-  width: 660px; 
-  margin: 0 auto;
+
+.owl-prev {
+  float: left;
 }
-#gallery ul {
-  padding-left: 10px;
+
+.owl-next {
+  position: absolute;
+  right: 0;
 }
-#gallery li {
-  display: inline; 
-  margin-right: 3px;
-}
-#gallery {
-  ul {
-    padding: 0;
-    margin: 0;
-    img {
-      width: 120px;    
-    }
-  }
-}
-#gallery #main-img {
-  padding: 0;
-}
-.image_scroll_bar {
-  width: 100%;
-  overflow: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  margin: 0 0 10px;
-  img {
-    margin: 0 -12px 0 0;
-    padding: 0;
-  }
-}
-.main_text {
-  background-color: rgba(255, 255, 255, 0.65);
-  height: 590px;
-}
+
 // Services Overview
 .services_summary {
   padding: 30px 1.5rem;
@@ -218,16 +156,47 @@
   background-color: #29abe2;
   color: #fff;
   border-top: 1px solid #fff;
-  ul {
-    letter-spacing: 1px;
-    line-height: 26px;
-    font-weight: 300;
-  }
   p {
     letter-spacing: 1px;
     line-height: 26px;
     font-weight: 300;
   }
+}
+.services_list {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-weight: 300;
+    li {
+      color: rgba(0,0,0,0.5);
+      padding: 15px 20px;
+      text-align: center;
+    }
+  }
+}
+.left_list li:nth-child(odd) {
+  background-color: rgba(148, 192, 204, 1);
+}
+.left_list li:nth-child(4n + 1) {
+  background-color: #f6f4f1;
+}
+.right_list li:nth-child(odd) {
+  background-color: #f6f4f1;
+}
+.right_list li:nth-child(4n + 1) {
+  background-color: rgba(148, 192, 204, 1);
+}
+#panel, #panel1, #panel2, #panel3, #panel4, #panel5, #panel6, #panel7, #panel8, #panel9, #panel10, #panel11, #panel12, #panel13, #panel14, #panel15, #panel16 {
+  display: none;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+}
+#flip {
+
 }
 // Contact Section
 .contact_pane {
