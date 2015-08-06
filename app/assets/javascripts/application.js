@@ -3210,8 +3210,8 @@ $(document).ready(function() {
       autoPlay: 3000, //Set AutoPlay to 3 seconds
       
       loop:true,
-      nav:true,
-      items : 1,
+      nav: false,
+      items : 5,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]
  

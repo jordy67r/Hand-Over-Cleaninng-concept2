@@ -1,131 +1,160 @@
 .front_image#top
   .contact_bar.clearfix
-    .contact_phone.split_5.column Phone No.
-    .contact_email.split_5.column Email.
+    .contact_phone.split_33.column 
+      %a{:href => "07987 987 987"}
+        07987 987 987
+    .white_logo.split_33.column
+      %a{:href => "#top"}
+        = image_tag('white_logo.png')
+    .contact_email.split_33.column 
+      %a{:href => "Contact@handover-cleaning.co.uk"}
+        Contact@handover-cleaning.co.uk
   .title_container
-    %h1 Hand Over Cleaning
-    %h2 Specialising in end of tenacy residential cleaning
-  = link_to (image_tag('down_arrow.png')), '#about'
-.outer_content_container#about
-  .content_container
-    .content
-      .about_the_company.clearfix
-        -#  
-          .split_8.column.about_text
-            .section_title
-              %h2 About us
-            %p We are your trusted and reliable Hand Over Cleaning Company for end of tenancy cleans.We do everything for you including carpets, floors, wall washing, wipe down of cupboards and skirting boards, remove spider webs, oven cleaning, sinks, kitchens, bathrooms, you name it, we clean it.
-          = link_to root_path do
-            .split_2.column.tab
-              tab 1
-          = link_to root_path do
-            .split_2.column.tab2
-              tab 2
-          = link_to root_path do
-            .split_2.column.tab3
-              tab 3
+    .row_one
+      %div.title_tile
+        .grid_title
+          %h2 Handover Cleaning
+          %p Specialising in end of tenancy residential cleaning
+          =link_to 'Read More', '#our_services'
+      %a{:href => "#our_services"}
+        %div.single_tile
+          .blue_tile
+            %p Our Services
+      %div.single_tile.img_tile
+        = image_tag('tile1.png')
+      %div.empty_tile
+        //empty
+    .row_two  
+      %div.single_tile.img_tile
+        = image_tag('tile2.png')
+      %a{:href => "#contact_us"} 
+        %div.single_tile
+          .blue_tile 
+            %p Contact Us
+      %div.empty_tile
+        //empty
+      %div.single_tile.img_tile
+        = image_tag('tile3.png')
+      %a{:href => "#about_us"}
+        %div.single_tile
+          .blue_tile
+            %p About Us
+    .row_three
+      %div.hands_tile.img_tile
+        = image_tag('logo_blue.png')
+      %div.single_tile.img_tile
+        = image_tag('tile3.png')
+      %a{:href => "#before_after"}
+        %div.single_tile
+          .blue_tile
+            %p Before / After
+      %div.single_tile.img_tile
+        = image_tag('tile1.png')
+.outer_content_container#our_services
+  .blue_bar
+    -# .side_bar
+      %ul
+        %li= image_tag('home.png')
+        %li= image_tag('gallery.png')
+        %li= image_tag('services.png')
+        %li= image_tag('contact.png')
+  .content
+    .our_services.clearfix
+      .split_10.column.section_title
+        %h2 Hand Over Cleaning
+        %h4 We are your trusted and reliable Hand Over Cleaning Company for end of tenancy cleans.
+      .split_6.column.service_text
+        .split_10.body_text.shadow
+          %p We do everything for you including carpets, floors, wall washing, wipe down of cupboards and skirting boards, remove spider webs, oven cleaning, sinks, kitchens, bathrooms, you name it, we clean it. 
+          %p If you are moving out of your house or apartment soon and want to be confident you will get your deposit back from your property agents, contact us for a no obligation free Hand Back Cleaning Company quote today.
+        .split_10.slogan_image
+          = image_tag('slogan_box.png')
+      .split_4.column.we_do.shadow
+        %h2 We Do...
+        %ul
+          %li Cleaning Showers & Bathrooms 
+          %li Mopping Floors & Washing Walls 
+          %li Ovens & Hot Plates 
+          %li Kitchens & Cupboards 
+          %li Skirting Boards 
+          %li Carpet Cleaning and Steam Cleaning if required. 
+          %li Vacuuming 
+          %li Kitchens 
+          %li Bathrooms 
+          %li Cabinets cleaned 
+          %li Hallways & Stairway 
+          %li Laundry 
+          %li Skirting Boards 
+          %li Walls 
+          %li Floors 
+          %li Windows 
+          %li Spot Cleaning and stain removal
+      .split_10.slogan_image_wide
+        = image_tag('slogan_box.png') 
+    #before_after
+    .photo_sliders.clearfix
+      .split_10.column.section_title
+        %h2 Bofre / After
+        %h4 We turn this...
+        .owl-carousel
+          %div= image_tag('slide1.png')
+          %div= image_tag('slide2.png')
+          %div= image_tag('slide3.png')
+          %div= image_tag('slide4.png')
+          %div= image_tag('slide5.png')
+        %h4 Into this...
+        .owl-carousel
+          %div= image_tag('slide1.png')
+          %div= image_tag('slide2.png')
+          %div= image_tag('slide3.png')
+          %div= image_tag('slide4.png')
+          %div= image_tag('slide5.png')
 
-        .tab-wrapper.clearfix
-          
-          .tab-content.split_8.column
-            %div
-              %h2 About us
-              %p We are your trusted and reliable Hand Over Cleaning Company for end of tenancy cleans.We do everything for you including carpets, floors, wall washing, wipe down of cupboards and skirting boards, remove spider webs, oven cleaning, sinks, kitchens, bathrooms, you name it, we clean it.
-            %div 
-              %h2 Lorem ipsum 
-              %p dolor sit amet, consectetur adipisicing elit. Enim veritatis nostrum, blanditiis, quia maiores nisi. Expedita cupiditate similique magnam, adipisci nesciunt, laborum rem! Excepturi, ad.
-            %div 
-              %h2 Lorem ipsum dolor 
-              %p sit amet, consectetur adipisicing elit. Quis, ad esse. Hic at officiis fuga mollitia quod.
-          %ul.tab-menu.split_2.column
-            %li.active About Us
-            %li tab #2
-            %li tab #3
+    .banner.clearfix
+      %h2 Can We Help You Get Your Deposite Back
+      .button_container
+        %a{:href => "#"} 
+          Call me
+          %span{:style => "font-weight: 600;"} 07987 987 987
+    .about_us#about_us    
+      .split_10.column.section_title
+        %h2 About Us
+        %h4 We have been trusted by many households to get their property ready for end of tenancy
 
-      .photo_slider.clearfix
-        .split_10.column
-          .section_title
-            %h2 Our work
-            .owl-carousel
-              %div= image_tag('slide1.png')
-              %div= image_tag('slide2.png')
-              %div= image_tag('slide3.png')
-              %div= image_tag('slide4.png')
-              %div= image_tag('slide5.png')
+      .split_5.column.about_us_text_left
+        %h3 Experienced and Reliable
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum euismod dapibus. Duis in est quis ex vestibulum lobortis vel sed tortor. Nam vestibulum tempus lacus, iaculis consequat ex dignissim non. Morbi at malesuada purus. Nulla ultricies mi dui, non dapibus turpis eleifend at. Donec nec sapien nisi. 
+        %p Aliquam quis neque a odio ornare blandit congue nec tortor. Donec tincidunt vitae sapien eget scelerisque. Cras a libero id augue gravida ultrices ac in enim. Mauris pellentesque vulputate sapien eu aliquam. Sed libero ex, dignissim id pharetra nec, maximus sit amet nisi. Vestibulum ac elit ut purus venenatis auctor. Etiam quis.
+      .split_5.column.about_us_text_right
+        .blue_div.shadow
+        .grey_div.shadow
+          %h3 Victoria Dance
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum euismod dapibus. Duis in est quis ex vestibulum lobortis vel sed tortor. Nam vestibulum tempus lacus, iaculis consequat ex dignissim non. Morbi at malesuada purus. Nulla ultricies mi dui, non dapibus turpis eleifend at. Donec nec sapien nisi. 
+
+    .testimonials
+      .split_10.column.section_title
+        %h2 Testimonials
+        %h4 What our customers say...
 
 
+    .contact_pane.clearfix
+      .split_10.column.section_title#contact_us
+        %h2 Get In Touch
+        %h4 If you have any questions give me a call, send an email or use the form below
+      .split_10.column  
+        %p 
+          Call 
+          %span{:style => "font-weight: 600;"} 07987 987 9870 
+          Email 
+          %span{:style => "font-weight: 600;"} Victoria@handover-cleaning.co.uk
 
-      .services_summary.clearfix
-        .section_title
-          %h2 What we can do for you!
-          %p (Click on a service to find out more)
-        .services_list.clearfix
-          %ul.left_list.split_5.column
-            %li#flip Cleaning Showers & Bathrooms
-            #panel random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip1 Mopping Floors & Washing Walls
-            #panel1 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip2 Ovens & Hot Plates
-            #panel2 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back! 
-
-            %li#flip3 Kitchens & Cupboards
-            #panel3 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip4 Skirting Boards
-            #panel4 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip5 Carpet Cleaning and Steam Cleaning if required
-            #panel5 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip6 Vacuuming 
-            #panel6 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip7 Kitchens
-            #panel7 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip8 Bathrooms
-            #panel8 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-          %ul.right_list.split_5.column 
-            %li#flip9 Cabinets cleaned
-            #panel9 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip10 Hallways & Stairway 
-            #panel10 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip11 Laundry
-            #panel11 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip12 Skirting Boards 
-            #panel12 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip13 Walls 
-            #panel13 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip14 Floors
-            #panel14 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip15 Windows 
-            #panel15 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-            %li#flip16 Spot Cleaning and stain removal 
-            #panel16 random shinags Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back!
-
-        %p Our Hand Over Cleaning service covers all aspects to ensure every chance of getting your Deposit back! 
-        %p If you are moving out of your house or apartment soon and want to be confident you will get your deposit back from your property agents, contact us for a no obligation free Hand Back Cleaning Company quote today.
-      .more_detail_about_services
-      .contact_pane.clearfix
-        %form
-          .split_4.form_name
+      .split_10.column.form_wrapper
+        %form.split_8.column
+          .split_5.form_name
             %input{:name => "name", :type => "text", :placeholder => "Name..."}
-          .split_4
+          .split_5.form_email
             %input{:name => "email", :type => 'email', :placeholder => "Email..."}
-          .split_9
+          .split_10
             %textarea{:name => "message", :rows => "8", :placeholder => "Message..."}
-          .split_9.submit_button
+          .split_10.submit_button
             %button{:type => "submit"} SEND
-      .to_top.clearfix
-        .split_10.column
-          =link_to (image_tag('to_top.png')), '#top'

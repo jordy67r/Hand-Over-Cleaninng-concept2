@@ -4,6 +4,9 @@
 .content {
   width: 60%;
   margin: 0 auto;
+  @media (max-width: 920px) {
+    width: 90%;
+  }
 }
 .column {
   float: left;
@@ -43,10 +46,35 @@
 .split_10 {
   width: 100%;
 }
-.body_text {
-  color: $text-black;
-  line-height: 22px;
-  font-size: 14px;
+.section_title {
+  margin: 20px 0;
+  background-image: url("blue_logo.png");
+  background-position: 50% 17px;
+  background-repeat: no-repeat;
+  padding: 18px 0;
+  background-size: 20%;
+  h2 {
+    color: #29abe2;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  h4 {
+    color: #000;
+    text-align: center;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    line-height:22px;
+  }
+}
+.shadow {
+  box-shadow: $shadow;
 }
 img {
   max-width: 100%;
